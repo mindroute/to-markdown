@@ -46,21 +46,21 @@
   ],
   "exports": {
     ".": {
+      "browser": "./dist/browser.js",
       "import": "./index.js",
-      "require": "./dist/index.cjs",
-      "browser": "./dist/browser.js"
+      "require": "./dist/index.cjs"
     },
     "./lib/*": "./lib/*",
     "./dist/*": "./dist/*"
   },
   "dependencies": {
+    "esbuild": "^0.27.2",
     "mdast-builder": "^1.1.1",
     "mdast-util-from-markdown": "^1.0.4",
     "mdast-util-gfm": "^1.0.0",
     "mdast-util-to-markdown": "^1.0.1",
     "remark-gfm": "^1.0.0",
     "remark-stringify": "^9.0.1",
-    "unified": "^9.2.1",
-    "esbuild": "^0.20.2"
+    "unified": "^9.2.1"
   }
 }
